@@ -90,8 +90,6 @@ class DropoutPred:
 
         data = {}
         for key, file_name in zip(sorted(key_names), sorted(file_names)):
-            # print(f"key: {key.lower()}")
-            # print(f"file_name: {file_name}")
             data[key.lower()] = pd.read_csv(os.path.join(csv_path, file_name), low_memory=False)
 
         return data
